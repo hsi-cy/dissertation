@@ -1,0 +1,2306 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-112286258-2">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+            gtag('config', 'UA-112286258-1');
+            gtag('config', 'UA-112286258-2');
+  </script>
+  <link href="//stackpath.bootstrapcdn.com" rel="dns-prefetch"/>
+  <link href="//www.google.com" rel="dns-prefetch"/>
+  <link href="//googleads.g.doubleclick.net" rel="dns-prefetch"/>
+  <link href="//www.gstatic.com" rel="dns-prefetch"/>
+  <link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+  <link href="//use.fontawesome.com" rel="dns-prefetch"/>
+  <link href="//tpc.googlesyndication.com" rel="dns-prefetch"/>
+  <link href="//code.jquery.com" rel="dns-prefetch"/>
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch"/>
+  <script>
+   sessionStorage.getItem("id")?window.history.scrollRestoration="manual":window.history.scrollRestoration="auto";
+  </script>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="Are you wondering what's new &amp;ndash; or what's best &amp;ndash; on Netflix? Flixable is a search engine for video streaming services that offers a complete list of all the movies and TV shows that are currently streaming on Netflix in the U.S." name="description"/>
+  <meta content="1606326079643623" property="fb:app_id"/>
+  <meta content="website" property="og:type"/>
+  <meta content="List of Netflix Originals | Flixable" property="og:title"/>
+  <meta content="Are you wondering what's new &amp;ndash; or what's best &amp;ndash; on Netflix? Flixable is a search engine for video streaming services that offers a complete list of all the movies and TV shows that are currently streaming on Netflix in the U.S." property="og:description"/>
+  <meta content="https://flixable.com/netflix-originals/genre/tv-shows/?min-rating=0&amp;amp;min-year=1920&amp;amp;max-year=2019&amp;amp;order=title" property="og:url"/>
+  <meta content="https://flixable.com/images/logo-500x250.png" property="og:image"/>
+  <meta content="#000" name="theme-color"/>
+  <link href="/favicon.png" rel="icon"/>
+  <link href="/images/symbol-192x192.png" rel="icon" sizes="192x192"/>
+  <title>
+   List of Netflix Originals | Flixable
+  </title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css" rel="stylesheet"/>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"/>
+  <link href="/style.min.css?ver=0.1.3" rel="stylesheet"/>
+  <script async="" src="/lazysizes.min.js">
+  </script>
+  <link href="/manifest.json" rel="manifest"/>
+ </head>
+ <body>
+  <!-- Modal -->
+  <div aria-hidden="true" aria-labelledby="loginModalLabel" class="modal fade" id="loginModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="loginModalLabel">
+       Sign In
+      </h5>
+      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+       <span aria-hidden="true">
+        ×
+       </span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-12 mb-3 text-center">
+        <a href="https://www.facebook.com/v3.2/dialog/oauth?client_id=324240451429392&amp;amp;state=38c64eda325a7df990b61f9ea243f943&amp;amp;response_type=code&amp;amp;sdk=php-sdk-5.7.0&amp;amp;redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php%3Fprovider%3Dfacebook&amp;amp;scope=email">
+         <div id="facebookButton">
+          <span class="icon">
+          </span>
+          <span class="text">
+           Log In With Facebook
+          </span>
+         </div>
+        </a>
+       </div>
+      </div>
+      <div class="row">
+       <div class="col-12 text-center">
+        <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;amp;access_type=online&amp;amp;client_id=860528796932-0te91jl5tghjj51o6jf97pb1esnu88au.apps.googleusercontent.com&amp;amp;redirect_uri=https%3A%2F%2Fflixable.com%2Fcallback.php%3Fprovider%3Dgoogle&amp;amp;state&amp;amp;scope=email%20profile&amp;amp;approval_prompt=auto">
+         <div id="googleButton">
+          <span class="icon">
+          </span>
+          <span class="text">
+           Log In With Google
+          </span>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+   <a class="navbar-brand" href="/">
+    <img alt="List of Movies and TV Shows on Netflix | Flixable" class="d-none d-sm-inline" src="/images/logo.svg" style="height: 28px; width: 125px;"/>
+    <img alt="List of Movies and TV Shows on Netflix | Flixable" class="d-inline d-sm-none" src="/images/symbol.svg" style="height: 28px;"/>
+   </a>
+   <ul class="navbar-nav" id="serviceDropdown">
+    <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle font-weight-bold active" data-toggle="dropdown" href="/" id="navbarDropdown">
+      Netflix
+     </a>
+     <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+      <a class="dropdown-item active" href="/">
+       Netflix
+      </a>
+      <a class="dropdown-item" href="https://flixable.com/disney-plus/">
+       Disney+
+      </a>
+     </div>
+    </li>
+   </ul>
+   <div class="d-flex order-lg-1 ml-auto mr-3">
+    <form action="/" class="form-inline search-form" method="get">
+     <div class="input-group">
+      <input aria-label="Search" class="form-control d-none search-input typeahead" name="s" placeholder="Title, person" type="text" value=""/>
+      <div class="input-group-append">
+       <button class="btn btn-danger search-button" type="submit">
+        <span class="fas fa-search">
+        </span>
+       </button>
+      </div>
+     </div>
+    </form>
+    <ul class="navbar-nav">
+     <li class="nav-item">
+      <a class="nav-link px-2 text-white" data-target="#loginModal" data-toggle="modal" href="javascript:;" id="register">
+       Sign In
+      </a>
+     </li>
+    </ul>
+    <ul class="navbar-nav">
+     <li class="nav-item">
+      <a class="nav-link px-2 text-white" href="/contact/">
+       <span class="fas fa-paper-plane">
+       </span>
+      </a>
+     </li>
+    </ul>
+   </div>
+   <button aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarMain" data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon">
+    </span>
+   </button>
+   <div class="collapse navbar-collapse" id="navbarMain">
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
+      <a class="nav-link" href="/popular/">
+       Popular
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/coming-soon/">
+       Coming Soon
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/leaving-netflix/">
+       Leaving
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/netflix-originals/">
+       Originals
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="/guides/">
+       Guides
+      </a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link my-list" href="/my-list/">
+       My List
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <div class="container">
+   <div class="row justify-content-center text-center ads">
+    <div class="col mt-3">
+     <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+     </script>
+     <!-- Flixable - Responsive -->
+     <ins class="adsbygoogle" data-ad-client="ca-pub-7234786419871369" data-ad-format="auto" data-ad-slot="1479555091" data-full-width-responsive="true" style="display:block">
+     </ins>
+     <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+     </script>
+    </div>
+   </div>
+  </div>
+  <main role="main">
+   <div class="container mt-3 pt-2" id="filterContainer">
+    <div class="row mb-2">
+     <div class="col-12">
+      <h1>
+       List of Netflix Originals
+      </h1>
+      <div id="shareButtonContainer">
+       <div class="share-button" id="facebookShareButton">
+        <img alt="Facebook" class="lazyload" data-src="/images/share-buttons/facebook.svg"/>
+       </div>
+       <div class="share-button" id="twitterShareButton">
+        <img alt="Twitter" class="lazyload" data-src="/images/share-buttons/twitter.svg"/>
+       </div>
+       <div class="share-button" id="emailShareButton">
+        <img alt="Email" class="lazyload" data-src="/images/share-buttons/email.svg"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <hr class="mb-4"/>
+    <div class="row justify-content-center">
+     <div class="col-12 mb-3">
+      <ul class="nav nav-tabs">
+       <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="/netflix-originals/#filterContainer">
+         All
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="/netflix-originals/genre/movies/#filterContainer">
+         Movies
+        </a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link font-weight-bold active" href="/netflix-originals/genre/tv-shows/#filterContainer">
+         TV Shows
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <form class="mb-2" onsubmit="return false;">
+     <div class="row justify-content-center">
+      <div class="col-md-3">
+       <div class="form-group">
+        <label class="font-weight-bold" for="genre">
+         Genre
+        </label>
+        <select class="form-control" id="genre">
+         <option selected="" value="tv-shows">
+          All
+         </option>
+         <option value="anime-series">
+          Anime Series
+         </option>
+         <option value="british-tv-shows">
+          British TV Shows
+         </option>
+         <option value="classic-and-cult-tv">
+          Classic &amp; Cult TV
+         </option>
+         <option value="crime-tv-shows">
+          Crime TV Shows
+         </option>
+         <option value="docuseries">
+          Docuseries
+         </option>
+         <option value="international-tv-shows">
+          International TV Shows
+         </option>
+         <option value="kids-tv">
+          Kids' TV
+         </option>
+         <option value="korean-tv-shows">
+          Korean TV Shows
+         </option>
+         <option value="reality-tv">
+          Reality TV
+         </option>
+         <option value="romantic-tv-shows">
+          Romantic TV Shows
+         </option>
+         <option value="science-and-nature-tv">
+          Science &amp; Nature TV
+         </option>
+         <option value="spanish-language-tv-shows">
+          Spanish-Language TV Shows
+         </option>
+         <option value="stand-up-comedy-and-talk-shows">
+          Stand-Up Comedy &amp; Talk Shows
+         </option>
+         <option value="teen-tv-shows">
+          Teen TV Shows
+         </option>
+         <option value="tv-action-and-adventure">
+          TV Action &amp; Adventure
+         </option>
+         <option value="tv-comedies">
+          TV Comedies
+         </option>
+         <option value="tv-dramas">
+          TV Dramas
+         </option>
+         <option value="tv-horror">
+          TV Horror
+         </option>
+         <option value="tv-mysteries">
+          TV Mysteries
+         </option>
+         <option value="tv-sci-fi-and-fantasy">
+          TV Sci-Fi &amp; Fantasy
+         </option>
+         <option value="tv-thrillers">
+          TV Thrillers
+         </option>
+        </select>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="form-group">
+        <label class="font-weight-bold" for="rating">
+         Rating
+        </label>
+        <select class="form-control" id="rating">
+         <option selected="" value="0">
+          All
+         </option>
+         <option value="9">
+          9+
+         </option>
+         <option value="8">
+          8+
+         </option>
+         <option value="7">
+          7+
+         </option>
+         <option value="6">
+          6+
+         </option>
+         <option value="5">
+          5+
+         </option>
+         <option value="4">
+          4+
+         </option>
+         <option value="3">
+          3+
+         </option>
+         <option value="2">
+          2+
+         </option>
+         <option value="1">
+          1+
+         </option>
+        </select>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="form-group">
+        <label class="font-weight-bold" for="audio">
+         Audio
+        </label>
+        <select class="form-control" id="audio">
+         <option value="">
+          All
+         </option>
+         <option value="af">
+          Afrikaans
+         </option>
+         <option value="ar">
+          Arabic
+         </option>
+         <option value="as">
+          Assamese
+         </option>
+         <option value="bn">
+          Bangla
+         </option>
+         <option value="eu">
+          Basque
+         </option>
+         <option value="pt">
+          Brazilian Portuguese
+         </option>
+         <option value="yue">
+          Cantonese
+         </option>
+         <option value="ca">
+          Catalan
+         </option>
+         <option value="hr">
+          Croatian
+         </option>
+         <option value="cs">
+          Czech
+         </option>
+         <option value="da">
+          Danish
+         </option>
+         <option value="nl">
+          Dutch
+         </option>
+         <option value="en">
+          English
+         </option>
+         <option value="fil">
+          Filipino
+         </option>
+         <option value="fi">
+          Finnish
+         </option>
+         <option value="fr">
+          French
+         </option>
+         <option value="gl">
+          Galician
+         </option>
+         <option value="ka">
+          Georgian
+         </option>
+         <option value="de">
+          German
+         </option>
+         <option value="gu">
+          Gujarati
+         </option>
+         <option value="ha">
+          Hausa
+         </option>
+         <option value="he">
+          Hebrew
+         </option>
+         <option value="hi">
+          Hindi
+         </option>
+         <option value="hu">
+          Hungarian
+         </option>
+         <option value="is">
+          Icelandic
+         </option>
+         <option value="id">
+          Indonesian
+         </option>
+         <option value="it">
+          Italian
+         </option>
+         <option value="ja">
+          Japanese
+         </option>
+         <option value="kn">
+          Kannada (India)
+         </option>
+         <option value="km">
+          Khmer
+         </option>
+         <option value="ko">
+          Korean
+         </option>
+         <option value="ms">
+          Malay
+         </option>
+         <option value="ml">
+          Malayalam
+         </option>
+         <option value="zh">
+          Mandarin
+         </option>
+         <option value="mr">
+          Marathi
+         </option>
+         <option value="ne">
+          Nepali
+         </option>
+         <option value="nb">
+          Norwegian
+         </option>
+         <option value="fa">
+          Persian
+         </option>
+         <option value="pl">
+          Polish
+         </option>
+         <option value="pa">
+          Punjabi
+         </option>
+         <option value="ro">
+          Romanian
+         </option>
+         <option value="ru">
+          Russian
+         </option>
+         <option value="sa">
+          Sanskrit
+         </option>
+         <option value="es">
+          Spanish
+         </option>
+         <option value="sv">
+          Swedish
+         </option>
+         <option value="tl">
+          Tagalog
+         </option>
+         <option value="nan">
+          Taiwanese
+         </option>
+         <option value="ta">
+          Tamil
+         </option>
+         <option value="te">
+          Telugu
+         </option>
+         <option value="th">
+          Thai
+         </option>
+         <option value="tr">
+          Turkish
+         </option>
+         <option value="uk">
+          Ukrainian
+         </option>
+         <option value="ur">
+          Urdu
+         </option>
+         <option value="vi">
+          Vietnamese
+         </option>
+         <option value="wo">
+          Wolof
+         </option>
+         <option value="yi">
+          Yiddish
+         </option>
+         <option value="yo">
+          Yoruba
+         </option>
+         <option value="zu">
+          Zulu
+         </option>
+        </select>
+       </div>
+      </div>
+      <div class="col-md-3">
+       <div class="form-group">
+        <label class="font-weight-bold" for="orderBy">
+         Sort By
+        </label>
+        <select class="form-control" id="orderBy">
+         <option value="date">
+          New on Netflix
+         </option>
+         <option value="rating">
+          Rating
+         </option>
+         <option value="year">
+          Release Year
+         </option>
+         <option selected="" value="title">
+          Title
+         </option>
+        </select>
+       </div>
+      </div>
+     </div>
+     <div class="row justify-content-center">
+      <div class="col-12 font-weight-bold">
+       Release Year
+      </div>
+     </div>
+     <div class="row justify-content-center">
+      <div class="col-md-8 mb-4" id="sliderContainer">
+       <div class="text-left" id="yearStart">
+        1920
+       </div>
+       <!--<input id="yearSlider" type="text" value="" data-slider-min="1920" data-slider-max="2020" data-slider-step="1" data-slider-value="[1920,2019]">-->
+       <input data-slider-max="2020" data-slider-min="1920" data-slider-step="1" data-slider-value="[1920,2019]" id="yearSlider" type="text" value=""/>
+       <div class="text-right" id="yearEnd">
+        2019
+       </div>
+      </div>
+      <div class="col-md-4 mb-4" id="submitContainer">
+       <button class="btn btn-primary" id="submit" type="button">
+        <span class="fas fa-sliders-h mr-2">
+        </span>
+        <span class="font-weight-bold small text-uppercase">
+         Filter
+        </span>
+       </button>
+      </div>
+     </div>
+    </form>
+    <div id="response">
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="1">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80996791/">
+         <img alt="13 Reasons Why: Beyond the Reasons (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTKhvVWY9IQe94o8jIv1zQtJipUXn31jyH3D7yOyzxjxa6aEka0-59ohog_b0TFlMGNqoBZUZYfTeAfdpBzJTEb0G6nXk8hpwzybx13LcsgEK8VzquanLrcsosg8.jpg?r=2d3"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Docuseries
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80996791/">
+          13 Reasons Why: Beyond the Reasons
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6723582" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt6723582/?ref_=plg_rt_1">
+           <img alt=" 13 Reasons Why: Beyond the Reasons (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="2">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80205593/">
+         <img alt="1983 (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQaeiKUyUTtsXNtV-v65ZCcRi3cdhfRlMUJ719LQScRqcJfQZ0vnuQlofdqW9SQun_coUu4mlJYk_NPqiUA8i5gIX2bqh-qqN_GfGE5188_JOH4XV3uGphNOvYCW.jpg?r=a6e"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80205593/">
+          1983
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7371666" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt7371666/?ref_=plg_rt_1">
+           <img alt=" 1983 (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="3">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80991872/">
+         <img alt="1994 (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXpVzhfD6rfZEwDaWehdTCCkjBYSsDf-4zSENG0ARZLw3M7oe4EIRQzkcxc9z59N54IXndLqFRCQi2fXok_Gc_6qsEj52coGP2N2oSS9OrobhT3AsiDAOiGMtFHQ.jpg?r=0f0"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Docuseries
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80991872/">
+          1994
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt10225030" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt10225030/?ref_=plg_rt_1">
+           <img alt=" 1994: Poder, Rebeldía y Crimen en México (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="4">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80215076/">
+         <img alt="21 Thunder (2017)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdexwLSXFITvowgngQk5Hei-bQhYU2jUZ5XOre0xPJsHv0JR-wJh4rrYUDym_kBZN65EpmEVG2cPyC4_KEJh2xYJyFlYz1dVpWLWVhAedGA76WYOsXVqfUnnlJyp.jpg?r=d7c"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80215076/">
+          21 Thunder
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6145878" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt6145878/?ref_=plg_rt_1">
+           <img alt=" 21 Thunder (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="5">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80074220/">
+         <img alt="3% (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe0I2r5FE0HR0mlRDfG7dVWZxrvFA7SqWy-qd-0sZSljUDvCNJhypf1P8SHTipmzqi07_e6c_L_BbLPnZSiy-qqBjaTN4gdYT3tKzsvaM0ZD3CUsdvpA55NY4gQJ.jpg?r=f53"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Sci-Fi &amp; Fantasy
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80074220/">
+          3%
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt4922804" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt4922804/?ref_=plg_rt_1">
+           <img alt=" 3% (2016) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="6">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80179784/">
+         <img alt="3Below: Tales of Arcadia (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWdJ086GWeqpuFytwRRaSNSehtOxKlBqR8Jj49e-lVfALkc7hzEJPvTe5o_VgHB85eO6vScb8suCe0gQE12k5uHsVtgnD5bUSTD7G36GT5DPlVrsyUmO2xBclyzg.jpg?r=0e3"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Kids' TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Action &amp; Adventure
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Sci-Fi &amp; Fantasy
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80179784/">
+          3Below: Tales of Arcadia
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7736544" data-user="ur109957074">
+          <a href="https://www.imdb.com/title/tt7736544/?ref_=plg_rt_1">
+           <img alt=" 3Below: Tales of Arcadia (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="7">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81040407/">
+         <img alt="45 rpm (2019)" class="lazyload poster" data-src="https://occ-0-2433-2430.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQVxjRbf7FwXehkQAOcKUThoQEyiaZT3DrAAHYGpzztRz18T7kZz8GbrX8JYJx2DtCpcGeWOWf58mbSNWzUxCmqrqQY34WWIT45uXJb61MstF1wAs9Q2OfxH4n07.jpg?r=51f"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Romantic TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Spanish-Language TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81040407/">
+          45 rpm
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8987918" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt8987918/?ref_=plg_rt_1">
+           <img alt=" 45 rpm (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="8">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80207124/">
+         <img alt="7 Days Out (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWWaQCYb_LNQjdx7JUvvM2JsqjjjsB2nFQjqQgC9ER-hSPNf5PAXDkHfm5OpJ7aKTZplZ2GzwVMsJnE6Yrk0Scxqa7JLf5fRdeAJ3O0zb95TcW4DEByBujYT8umj.jpg?r=dbb"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Docuseries
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80207124/">
+          7 Days Out
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt9315990" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt9315990/?ref_=plg_rt_1">
+           <img alt=" 7 Days Out (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="9">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80165437/">
+         <img alt="72 Dangerous Animals: Asia (2018)" class="lazyload poster" data-src="https://occ-0-2433-2430.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABezPTa-5FR2xvDVAhaPm0WLfgqhjLsbIOwNunHbKCHj5VKdiHlZQ-H6pblstVQxM130Zgaw_40sKGfRlEQae7t6odomDzHaVQpMQghs1NbDWIciDmDmUN1EUGWcJ.jpg?r=d53"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Docuseries
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Science &amp; Nature TV
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80165437/">
+          72 Dangerous Animals: Asia
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8728268" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt8728268/?ref_=plg_rt_1">
+           <img alt=" 72 Dangerous Animals - Asia (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="10">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80165247/">
+         <img alt="72 Dangerous Animals: Latin America (2017)" class="lazyload poster" data-src="https://occ-0-2433-2430.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABX5WZFtqax_4AT7YZHjFtHeitiP3oiLhAilXucNMfiofgewXzzZvjQlb_xLIZ-9FvvbI3A8CjWHZFAk89KZswxBfojniM9uE3zPfb6y2Kf7raPaeyoK6PdO8AZht.jpg?r=bf4"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Docuseries
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Science &amp; Nature TV
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80165247/">
+          72 Dangerous Animals: Latin America
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7909708" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt7909708/?ref_=plg_rt_1">
+           <img alt=" 72 Dangerous Animals: Latin America (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="11">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80193475/">
+         <img alt="A Little Help with Carol Burnett (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWIJpBfCwmi7_VGZjHUOU4nlZuLdGDgVNhsUxYmANH9DsYAuOQpTR5T8p1I09dySFEWEgFnKIv5ENScMiH44O3VwH-Bg65R_ayvkZhfL2K_I-qF71Ev2qz3aGxpA.jpg?r=912"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Stand-Up Comedy &amp; Talk Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80193475/">
+          A Little Help with Carol Burnett
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7204366" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt7204366/?ref_=plg_rt_1">
+           <img alt=" A Little Help with Carol Burnett (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="12">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80050008/">
+         <img alt="A Series of Unfortunate Events (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaDzVINC5s8FrUMoKfm5iDUpvma9A7OKVTJ1MHZDMV3t-OoEaMydGq-Z2E7m93nbSW5jOYEWmler5b4yT-8qn6hdHkKbhfapH-glCezLmTnxYjMyHK7qs5uSA6HI.jpg?r=a0a"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Kids' TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Action &amp; Adventure
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80050008/">
+          A Series of Unfortunate Events
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt4834206" data-user="ur109957074">
+          <a href="https://www.imdb.com/title/tt4834206/?ref_=plg_rt_1">
+           <img alt=" A Series of Unfortunate Events (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="13">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80189619/">
+         <img alt="A Taiwanese Tale of Two Cities (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfenOxzL8qPwJVMIUSh5n76jYXy2ZpafxX7iVHRbmUmUm7zZf-6oupMNZ_qFv8ZCb5Uo5WBdYAUpm51Rz5vyHa4R6I5-XwkcaBwRt6mGVOaMbSnidYZC1JqpZvQj.jpg?r=d53"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80189619/">
+          A Taiwanese Tale of Two Cities
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8893498" data-user="ur109957074">
+          <a href="https://www.imdb.com/title/tt8893498/?ref_=plg_rt_1">
+           <img alt=" A Taiwanese Tale of Two Cities (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="14">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80188935/">
+         <img alt="A Thousand Goodnights (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABePXkh-RJAIcCZWB4n0NQNjHEhxZXXC8MXLgq8jWsubqBSjgTAQ4xVVjufVezEa1wZdH3JZw-Y8FmLT4vgxG4MZaqXleg4-2t2KiZiz1Q8Y8LYcLEB6jBAg5VWOF.jpg?r=e75"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80188935/">
+          A Thousand Goodnights
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt10370952" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt10370952/?ref_=plg_rt_1">
+           <img alt=" A Thousand Goodnights (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="15">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80097771/">
+         <img alt="A Very Secret Service (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdYh8w2_QZC14AzLBqm9b9Aw4m6i2tB-YmniulahZf0baxztW0D8dgXMkr5WGS9I0_P2iXgFhJxRkZmM3DvuYsXcZCu8NOpAF3rWTgD_lzp05CHXWW17wF10NUY5.jpg?r=62d"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80097771/">
+          A Very Secret Service
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt4367560" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt4367560/?ref_=plg_rt_1">
+           <img alt=" Au service de la France (2015) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="16">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80161848/">
+         <img alt="A.I.C.O. (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSbWnzFzWhfhdiNZl4X4a8tIbVAe2i_B1cl8asAp5FQB-FJygs8orrTolqpE8rk_LissXxbOT2McNl9QORzt4bAqliLvnnJSCDnirB68P7kYMKJLUh0amOkKZCEm.jpg?r=ad1"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Anime Series
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80161848/">
+          A.I.C.O.
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8116380" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt8116380/?ref_=plg_rt_1">
+           <img alt=" A.I.C.O. Incarnation (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="17">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80057883/">
+         <img alt="Abstract: The Art of Design (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVlttBEaloQ9JmK8O_jGzx_qVu6AMN3uXpg5DuUCcPsg0i1nfYcjx8cpEI9aU1X8VujoyvzQqcys-eGJ9IuK19vOUql9EBNVndIUqxkkyrK5R7fonv5rdRDGJ8-9.jpg?r=70b"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Docuseries
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80057883/">
+          Abstract: The Art of Design
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6333098" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt6333098/?ref_=plg_rt_1">
+           <img alt=" Abstract: The Art of Design (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="18">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81087762/">
+         <img alt="Abyss (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSXiaZY6FyKg8N5bvvSqBb0ymrMbgMBOajpy-WCDpeKB0ieLihMRVo3e5UnW4H6vj3JVAVjS8nqgAkGgytBCCUYv_jlfkpVpJDsL19IwPzoqHMSXEabwHh2h7e9U.jpg?r=b8b"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Korean TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81087762/">
+          Abyss
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt10055734" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt10055734/?ref_=plg_rt_1">
+           <img alt=" Abyss (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="19">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81025800/">
+         <img alt="Accidentally in Love (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdQ9eS3AVWCnotQBKgWYkuCnzANOEjyvymJmcHimTMrjNTEaWDTvxxG498Jfuv443ooWkY0UmJLHcZbt8IXybqCsNEMwpUW9oO6fMtOYH1ex_e5TywqoWSyIJt2n.jpg?r=778"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Romantic TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81025800/">
+          Accidentally in Love
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt1684914" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt1684914/?ref_=plg_rt_1">
+           <img alt=" Accidentally in Love (2011) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="20">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81082327/">
+         <img alt="Ad Vitam (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeDvggewqrfp3VuhNtHIX2ltq4Yf4SNBQ-R9uB-NniTjjJmENd2Brn5n5sS2BRCGMq2oNj2qCNKi-QahaPEi0ea0HlVGgw1BM6kM-txJK4x-7RXU-fN5CO9PrFYT.jpg?r=839"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81082327/">
+          Ad Vitam
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8548830" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt8548830/?ref_=plg_rt_1">
+           <img alt=" Ad Vitam (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="21">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80188953/">
+         <img alt="Afflicted (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABagWy3CLHZwVlOdwoEIGFXuCM8xyuId64yQNQ-yL6WrEXcma0aRqYEYO9N77g3IahyupDChwuMT8dO9lPAr_O7iqse15RcR7pf17Wg4i6pglpGufd7LhlKq04p0P.jpg?r=5a7"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Docuseries
+          </span>
+          <span class="d-block font-weight-bold small">
+           Reality TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           Science &amp; Nature TV
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80188953/">
+          Afflicted
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8792570" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt8792570/?ref_=plg_rt_1">
+           <img alt=" Afflicted (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="22">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80198505/">
+         <img alt="Aggretsuko (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbpw8blhW5dppZqSK3sZ4dGypqcYZJ5V3HDqVuNAgmYRQ_bgrxaellemuCJDDwEr2SqQ3e8mhHquDlXjzFzQ75xVghjS2jDMOrkjwtCaq-1p41JZpgKtaR-yNOHx.jpg?r=4b1"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Anime Series
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80198505/">
+          Aggretsuko
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8019444" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt8019444/?ref_=plg_rt_1">
+           <img alt=" Aggretsuko (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="23">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81038696/">
+         <img alt="Ainori Love Wagon: African Journey (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfXCea7hhsgAjiiMA1BEEygAeE3rgROq0mjwmLC2c8UELP941mUqtwTWoofSZ7LYACqs1EaHIWNz2z-mMY0KskMl0IO2CWgXziUdINFAwWEkBxtGFyL-_8pzShtC.jpg?r=aa2"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Reality TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           Romantic TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81038696/">
+          Ainori Love Wagon: African Journey
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt11542960" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt11542960/?ref_=plg_rt_1">
+           <img alt=" Ainori Love Wagon: African Journey (2020) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="24">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80174280/">
+         <img alt="Ainori Love Wagon: Asian Journey (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf35r9tYQBofeYWsBIoaFngaOIlW2rVpyBsBmFo01CLt1A2kmK647HMMK51pR7FYJcAyCAV_6cixbDm_k66WIlzjtM5IEyLbon2r-OuxtscWxA6JiduHnty0nZYN.jpg?r=4de"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Reality TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           Romantic TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80174280/">
+          Ainori Love Wagon: Asian Journey
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7510930" data-user="ur109957074">
+          <a href="https://www.imdb.com/title/tt7510930/?ref_=plg_rt_1">
+           <img alt=" Ainori Love Wagon: Asian Journey (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="25">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80043576/">
+         <img alt="AJIN: Demi-Human (2016)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABc5Qf8WaW2askn-z7V1J3mnmoAqRrtY3nEYUQ9afY6i1feEe0zhdIaZC9cCLCxhFrxoDeAggJz_n6qiIXv7D0eY6bZGmn-eq0pOrZ-Jdm3PV0smS3xUD20NLf3hW.jpg?r=af2"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Anime Series
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80043576/">
+          AJIN: Demi-Human
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2016
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6215712" data-user="ur109957120">
+          <a href="https://www.imdb.com/title/tt6215712/?ref_=plg_rt_1">
+           <img alt=" Ajin: Demi-Human (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="26">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80119411/">
+         <img alt="Alias Grace (2017)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZ4B0zN7KfkrAkovKQfnX7PGHNad4ISpl0fB2tdSIpuR8sUEwOxQFN64MveY2P1w495KEu1VWtJ54uqDe8Ti-lwiCs5lQtDY_45TvYtBQhKUpIjCTOjIb56dmiMH.jpg?r=583"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80119411/">
+          Alias Grace
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt1034007" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt1034007/?ref_=plg_rt_1">
+           <img alt=" Alias Grace (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="27">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80211884/">
+         <img alt="All About the Washingtons (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbXZ3Nl9_zume5KL_FsJtMhGoWXBMf2KjXO-jsqp-bMfLmnRcOCm2K0YU4meXH5dBnZoGtjY9IVsKy8QWoOzLy8w6pgQwhfibWEtqTfoGMlZ7NVBRB8tiJtWnaZR.jpg?r=ac2"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80211884/">
+          All About the Washingtons
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7661368" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt7661368/?ref_=plg_rt_1">
+           <img alt=" All About The Washingtons (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="28">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80018987/">
+         <img alt="All Hail King Julien (2017)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU7x-4fAcAj2axWRBmtaW8kfeZWFs7y-0E_dkvQlOUIPcgHwZZgTwxVk2xfoe4rHxUC1jLx5gUC-oXpsE5mn_LAjfQ0_0W_0hEq-q1qkv3QOltSzvSDFNgdoWbaz.jpg?r=942"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Kids' TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80018987/">
+          All Hail King Julien
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt3807022" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt3807022/?ref_=plg_rt_1">
+           <img alt=" All Hail King Julien (2014) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="29">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80174364/">
+         <img alt="All Hail King Julien: Exiled (2017)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUWsn-7zWxyGDU1wdNS5OkpSsLxTA9RZsvjZ-NB_f5uTJEXzQxTVn1gVIDtDwwv9zaGF63hJZAhJq_QzkTCj7RLTxur1uuqzpHLKfKiz2OccNBfHxM4KqK6IxPO_.jpg?r=446"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Kids' TV
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Action &amp; Adventure
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80174364/">
+          All Hail King Julien: Exiled
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6865906" data-user="ur109957120">
+          <a href="https://www.imdb.com/title/tt6865906/?ref_=plg_rt_1">
+           <img alt=" All Hail King Julien: Exiled (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="30">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80205595/">
+         <img alt="Always a Witch (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWyv77LirjOUqHIBw3jqcrIavXjhjVEbHbbodaQu4rBijQQ0jNDz2a5Uxg6XNoYnEU47iEBzrkRwALQ9U3EMGkU1dy9eWnpwefTmiawALp9MB1kSo-qlWKCsQLar.jpg?r=ec8"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Spanish-Language TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80205595/">
+          Always a Witch
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8001250" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt8001250/?ref_=plg_rt_1">
+           <img alt=" Always a Witch (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="31">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80184067/">
+         <img alt="Amazing Interiors (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfFxDiabPUzSRFtO78uEhx7vaaDaPYo9PeARsuOAwxTB564cc63rU7Q0SNBN4sOJ5jY9kbFLGpBWyUkYSzigD7cWcU-pX5mjZeRgN8wf1QkcIhYmNyCWnM8daOyl.jpg?r=c7c"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           British TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Reality TV
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80184067/">
+          Amazing Interiors
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8747342" data-user="ur109956997">
+          <a href="https://www.imdb.com/title/tt8747342/?ref_=plg_rt_1">
+           <img alt=" Amazing Interiors (2018) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="32">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80117545/">
+         <img alt="American Vandal (2018)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABebwVkbE-Y8vVdDw1C8nOhyUKug4VF6zElbOQvF-9oNoTLLGTgBIbpfWS27GhpVT_G5RBGsz6cUzakCaCqUnho6skaWZbRM_xj_PFxkYg8XoP0TVW7aq3H5ZwXWo.jpg?r=2f9"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+          <span class="d-block font-weight-bold small">
+           Teen TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80117545/">
+          American Vandal
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2018
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6877772" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt6877772/?ref_=plg_rt_1">
+           <img alt=" American Vandal (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="33">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80218962/">
+         <img alt="AMO (2017)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbUovILRi2PZ3ynZLgkNsdnoH3oknHU0jMMK3Ct4J0DreQH7CG4mnvcd-E4W0VdEEqHpmdEdbb2rgo1fYKknxaMOqHM_xn2LMUkuBD36P0yLoruqklue_WCDwGVI.jpg?r=b5b"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80218962/">
+          AMO
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7218736" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt7218736/?ref_=plg_rt_1">
+           <img alt=" Amo (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="34">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80136311/">
+         <img alt="Anne with an E (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABc1QnRKEyD-JZw-bz29n0AgEKVoPbl4OwAv8RdUoi3fxXCZqom4R2JqPZCplnnhVJ8VZGgIX-rrx2KjUXp6-dV-ppxra9y9B-SueIAWVFghMdWCSASJ6K1qmbv8x.jpg?r=7b4"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+          <span class="d-block font-weight-bold small">
+           Teen TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80136311/">
+          Anne with an E
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt5421602" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt5421602/?ref_=plg_rt_1">
+           <img alt=" Anne (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="35">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80236236/">
+         <img alt="Another Life (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfvvNvN0THq5i6WRkD3HHKnnsMPw6X_UnB8rE9DdVi1OQcBKsB7d1RnUvAx4w8JlSFFh2AyMcV0LxEDKycK6NzHjoKwWdkuFW7uDX9_nJngPPwmAwOfxqGYZRHQN.jpg?r=efd"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           TV Action &amp; Adventure
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Mysteries
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80236236/">
+          Another Life
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt8369840" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt8369840/?ref_=plg_rt_1">
+           <img alt=" Another Life (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="36">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81081051/">
+         <img alt="Answer for Heaven (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSYf6BfPyPJX2j5X80L0KsrQkCMEDfDPkAakYVyY9DQjsiWEoP96Kkg8SAMoYnGtxgrg9BOLw3FfdYgyoNAWlN10kfdCMZ4whubaXs3CxKx__sp29lw2YkG7p6zs.jpg?r=6e3"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Comedies
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81081051/">
+          Answer for Heaven
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt10383558" data-user="ur109957074">
+          <a href="https://www.imdb.com/title/tt10383558/?ref_=plg_rt_1">
+           <img alt=" Answer for Heaven (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="37">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81106517/">
+         <img alt="Apache: The Life of Carlos Tevez (2019)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXuNnPLaiKGZMjgt1vQsK8ni7FU4ZJs8yE6EjEpkR1CFTCQ2wfdsYplWMimgXlb_zgLqzfjp2I7jLSLh9TUMCoJbC3jkU7kw8qRIZ2GjnxvedJxeMzzH6vPX9Km1.jpg?r=13e"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Crime TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Spanish-Language TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81106517/">
+          Apache: The Life of Carlos Tevez
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt10715172" data-user="ur109957074">
+          <a href="https://www.imdb.com/title/tt10715172/?ref_=plg_rt_1">
+           <img alt=" Apache: The Life of Carlos Tevez (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="38">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/81219073/">
+         <img alt="ARASHI's Diary -Voyage- (2019)" class="lazyload poster" data-src="https://occ-0-2433-2430.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVdgI1W3EnkucixL5BDtPmmh5-WUu-BYRe2fe5Vjiw8CSMVXuc6az6XzG729MexDHpzU2eQ2kLir-N_Bw4yWZSSqW3uPWuokmvGqXuXNFWJ47rXGzdbaCGQfYfi8rDo6eLeZ49mxRCa_YYSDoN-ZFSmA43I-IQ.jpg?r=ba1"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Docuseries
+          </span>
+          <span class="d-block font-weight-bold small">
+           International TV Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/81219073/">
+          ARASHI's Diary -Voyage-
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2019
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt11434874" data-user="ur85188756">
+          <a href="https://www.imdb.com/title/tt11434874/?ref_=plg_rt_1">
+           <img alt=" Arashi's Diary: Voyage (2019) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="39">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80214115/">
+         <img alt="Argon (2017)" class="lazyload poster" data-src="https://occ-0-1068-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABR_6jtD6sOE9KQV55JgnX4YQrAD7Pb48XqK4zYg6y2xuFERYxeOE8JM8yeSpxpuTXAWIjOOaafTA_0bGpX8jjgYSjn4Yvr4f246e5oXHJ4eoI4iV_y6rthPCj8SN.jpg?r=d23"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           International TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           Korean TV Shows
+          </span>
+          <span class="d-block font-weight-bold small">
+           TV Dramas
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80214115/">
+          Argon
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt7094798" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt7094798/?ref_=plg_rt_1">
+           <img alt=" Argon (2017) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-3 item" id="40">
+       <div class="poster-container">
+        <a class="poster-link" href="/title/80192842/">
+         <img alt="Ari Shaffir: Double Negative (2017)" class="lazyload poster" data-src="https://occ-0-2433-2430.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSDpaCSEszEs2-dHUUhHLdYscix6T7y18y5_tkv6wJ2z5U5JWaoNkB-SZsPyEJVMI4yv5Gp0K2eIHbvLX5qz2OzfZJs.jpg?r=08c"/>
+         <div class="overlay d-none d-lg-block text-center">
+          <span class="d-block font-weight-bold small mt-3">
+           Stand-Up Comedy &amp; Talk Shows
+          </span>
+         </div>
+        </a>
+       </div>
+       <div>
+        <strong>
+         <a class="title" href="/title/80192842/">
+          Ari Shaffir: Double Negative
+         </a>
+        </strong>
+       </div>
+       <div class="rating-container">
+        <div class="d-inline-block">
+         2017
+        </div>
+        <div class="d-inline-block ml-2 plugin">
+         <span class="imdbRatingPlugin" data-style="p1" data-title="tt6254796" data-user="ur109957154">
+          <a href="https://www.imdb.com/title/tt6254796/?ref_=plg_rt_1">
+           <img alt=" Ari Shaffir: Double Negative (2016) on IMDb" src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png"/>
+          </a>
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <input id="page" type="hidden" value="1"/>
+    <div class="text-center">
+     <div class="spinner-border text-danger" id="loader" role="status">
+      <span class="sr-only">
+       Loading...
+      </span>
+     </div>
+    </div>
+    <hr/>
+   </div>
+   <!-- /container -->
+  </main>
+  <footer class="container">
+   <div class="row mb-3">
+    <div class="col-4">
+     © 2020
+     <a href="/">
+      Flixable
+     </a>
+    </div>
+    <div class="col-8 text-right">
+     <a href="/about/">
+      About Us
+     </a>
+     <span class="mx-1">
+      |
+     </span>
+     <a href="/contact/">
+      Contact Us
+     </a>
+     <span class="mx-1">
+      |
+     </span>
+     <a href="/privacy-policy/">
+      Privacy Policy
+     </a>
+     <span class="mx-1">
+      |
+     </span>
+     <a href="/countries/">
+      Other Countries
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script src="https://flixablestatic.b-cdn.net/scripts/jquery-3.4.1.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js">
+  </script>
+  <script src="/typeahead.bundle.min.js">
+  </script>
+  <script src="/scripts/ratings.min.js">
+  </script>
+  <script src="/scripts/notifications/main.js">
+  </script>
+  <script>
+   $(document).ready(function(){
+                  if(sessionStorage.getItem('id') && sessionStorage.getItem('url') && sessionStorage.getItem('url') == 'https://flixable.com/netflix-originals/genre/tv-shows/?min-rating=0&amp;min-year=1920&amp;max-year=2019&amp;order=title'){
+        if(document.getElementById(sessionStorage.getItem('id'))){
+          var el = document.getElementById(sessionStorage.getItem('id'));
+          el.scrollIntoView({
+            block: 'center'
+          });
+          sessionStorage.removeItem('id');
+          sessionStorage.removeItem('url');
+        }
+      }
+            var pathname = window.location.pathname;
+      $("#navbarMain .navbar-nav > li > a[href=\"" + pathname + "\"]").parent().addClass("active");
+      var titles = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        remote: {
+          url: '/search.php?country=us&query=%QUERY',
+          wildcard: '%QUERY'
+        }
+      });
+      $("input.typeahead").typeahead(null, {
+        name: 'search',
+        display: 'title',
+        source: titles,
+        templates: {
+          suggestion: function(data){
+            return '<a href="/title/' + data.id + '/">' + data.title + '</a>';
+          }
+        }
+      });
+      $(document).click(function(e){
+        if(e.isTrigger){
+          return;
+        }
+        if(!$(".search-form").is(e.target) && $(".search-form").has(e.target).length == 0 && !$(".search-input").hasClass("d-none")){
+          $(".search-button").click();
+        }
+        if(!$(".navbar").is(e.target) && ($(".navbar").has(e.target).length == 0 || $(".search-form").has(e.target).length > 0) && $(".navbar-collapse").hasClass("collapse show")){
+          $(".navbar-toggler").click();
+        }
+      });
+      $(".search-button").click(function(e){
+        if(e.isTrigger || $(".search-input").hasClass("d-none") || $(".tt-input").val() == ''){
+          e.preventDefault();
+        }
+        else{
+          return;
+        }
+        $(".search-input").toggleClass("d-none");
+        $(".search-button").toggleClass("search-button-expanded");
+        if(!$(".search-input").hasClass("d-none")){
+                    $(".search-input").css("width", "auto");
+                    $(".search-input").focus();
+        }
+        else{
+          $(this).blur();
+        }
+      });
+      $(".read-more").click(function(){
+        $(this).toggleClass("read-more");
+        if($(this).hasClass("read-more")){
+          $(this).text("Read More...");
+        }
+        else{
+          $(this).text("Read Less...");
+        }
+      });
+      var link = encodeURIComponent("https://flixable.com/netflix-originals/genre/tv-shows/?min-rating=0&amp;min-year=1920&amp;max-year=2019&amp;order=title");
+      var text = encodeURIComponent("List of Netflix Originals");
+      $("#emailShareButton").click(function(){
+        $.post("/scripts/share.php", {service: 0});
+        window.open("mailto:?subject=Flixable", "_blank");
+      });
+      $("#facebookShareButton").click(function(){
+        $.post("/scripts/share.php", {service: 1});
+        window.open("https://www.facebook.com/sharer/sharer.php?u=" + link, "_blank");
+      });
+      $("#twitterShareButton").click(function(){
+        $.post("/scripts/share.php", {service: 2});
+        text = text.replace("Netflix", encodeURIComponent("#Netflix"));
+        text += " " + link;
+        window.open("https://twitter.com/intent/tweet?text=" + text + "&via=FlixableCom", "_blank");
+      });
+      $("#messengerShareButton").click(function(){
+        $.post("/scripts/share.php", {service: 3});
+        window.open("fb-messenger://share?link=" + link + "&app_id=1606326079643623", "_blank");
+      });
+      $("#whatsAppShareButton").click(function(){
+        $.post("/scripts/share.php", {service: 4});
+        window.open("whatsapp://send?text=" + link, "_blank");
+      });
+      truncateTitles();
+      loadRatings();
+            $("#amazon").click(function(e){
+        e.preventDefault();
+        $.post("/scripts/save.php", {mode: 4});
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+                  $(".my-list").click(function(e){
+        e.preventDefault();
+        $.post("/scripts/save.php", {mode: 0});
+        $("#loginModal").modal();
+        $.post("/scripts/session.php", {url: "/my-list/"});
+      });
+      $("#facebookButton").click(function(){
+        $.post("/scripts/save.php", {mode: 2});
+      });
+      $("#googleButton").click(function(){
+        $.post("/scripts/save.php", {mode: 3});
+      });
+      $("#register").click(function(){
+        $.post("/scripts/save.php", {mode: 1});
+      });
+                  $(window).on("hashchange", function(){
+        if(location.hash === '#submitContainer'){
+                    window.scrollBy(0, -4);
+                  }
+        else if(location.hash === '#filterContainer'){
+          window.scrollBy(0, -60);
+        }
+      }).trigger("hashchange");
+      $("#yearSlider").slider({
+        tooltip: 'hide'
+      });
+      $("#yearSlider").slider().on("slide", function(){
+        var values = $("#yearSlider").slider("getValue");
+        $("#yearStart").text(values[0]);
+        $("#yearEnd").text(values[1]);
+      });
+      $("#submit").click(function(){
+        var audio = $("#audio").val();
+        var genre = $("#genre").val();
+        var order = $("#orderBy").val();
+        var rating = $("#rating").val();
+        var values = $("#yearSlider").slider("getValue");
+                var container = '#filterContainer';
+        var mobile = '';
+                var originals = '';
+        if(audio){
+          audio = '&audio=' + audio;
+        }
+        if(genre){
+          genre = '/genre/' + genre + '/';
+        }
+                  originals = '/netflix-originals';
+                window.location.href = window.location.protocol + '//' + window.location.hostname + originals + genre + '?min-rating=' + rating + audio + '&min-year=' + values[0] + '&max-year=' + values[1] + '&order=' + order + mobile + container;
+      });
+      $(".alert").on("closed.bs.alert", function(){
+        $("#alertContainer").addClass("d-none");
+        $.post("/scripts/hide.php", {mode: 1});
+      });
+      $("#response").on("click", ".poster-link, .title", function(e){
+        e.preventDefault();
+        var id = $(this).closest(".item").attr("id");
+        sessionStorage.setItem('id', id);
+        sessionStorage.setItem('url', 'https://flixable.com/netflix-originals/genre/tv-shows/?min-rating=0&amp;min-year=1920&amp;max-year=2019&amp;order=title');
+        var url = $(this).prop("href");
+        window.open(url, "_self");
+      });
+      $("#response").on("click", ".plugin a", function(e){
+        e.preventDefault();
+        var url = $(this).prop("href");
+        window.open(url, "_blank");
+      });
+                                  });
+    function truncateTitles(){
+      var limit = 30;
+      var width = $(window).width();
+      if(width < 1200 && width >= 992){
+        limit = 25;
+      }
+      if((width < 992 && width >= 768) || width < 576){
+        limit = 40;
+      }
+      if(width < 768 && width >= 576){
+        limit = 25;
+      }
+      $(".title").each(function(){
+        if($(this).text().length > limit){
+          var title = $(this).text();
+          title = $.trim(title).substring(0, limit).split(' ').slice(0, -1).join(' ').replace(/[.,:;?!-]$/, '') + '...';
+          $(this).text(title);
+        }
+      });
+    }
+  </script>
+  <script src="/scrollMonitor.js">
+  </script>
+  <script>
+   var loader = document.getElementById('loader');
+    var watcher = scrollMonitor.create(loader);
+    watcher.enterViewport(function(){
+      var page = parseInt($("#page").val()) + 1;
+            var url = '/pagination.php?genre=tv-shows&min-rating=0&min-year=1920&max-year=2019&order=title&originals=1&page=' + page;
+      $.post(url, function(data){
+        if(data != ''){
+          $("#response").append(data);
+          $("#page").val(page);
+          gtag('config', 'UA-112286258-1');
+          $.post("/scripts/session.php", {page: page, parameters: "https://flixable.com/netflix-originals/genre/tv-shows/?min-rating=0&amp;min-year=1920&amp;max-year=2019&amp;order=title"});
+          truncateTitles();
+          loadRatings();
+        }
+        else{
+          $("#loader").hide();
+          $.post("/scripts/session.php", {page: page - 1, parameters: "https://flixable.com/netflix-originals/genre/tv-shows/?min-rating=0&amp;min-year=1920&amp;max-year=2019&amp;order=title"});
+        }
+      });
+    });
+  </script>
+ </body>
+</html>
