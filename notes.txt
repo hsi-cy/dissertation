@@ -1,0 +1,10 @@
+我可以用 api 抓100則留言做分析 
+抓數據很簡單
+
+用留言作sentiment anlaysis 
+
+but for what?
+
+i can get even more with the nextpage token
+
+but for what?
