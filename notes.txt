@@ -8,3 +8,29 @@ but for what?
 i can get even more with the nextpage token
 
 but for what?
+
+top_10_movie = [
+    'Bird Box',
+    'Murder Mystery',
+    'Triple Frontier',
+    'The Perfect Date',
+    'Tall Girl',
+    'The Highwaymen',
+    'Secret Obsession',
+    'Always Be My Maybe',
+    'Otherhood',
+    'FYRE: The Greatest Party That Never Happened'
+]
+
+top_10_tvshow = [
+    'Stranger Things',
+    'The Umbrella Academy',
+    'Money Heist',
+    'You',
+    'Sex Education',
+    'Our Planet',
+    'Unbelievable',
+    'Dead to Me',
+    'When They See Us',
+    'Elite'
+]
