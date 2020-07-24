@@ -43,6 +43,20 @@ the meyerowitz stories -> without () ok
 fyre: the greatest party that never happened -> fyre
 theatre of life -> theater of life ok 
 woodstock: three days that defined a generation -> woodstock ok
-cezanne and i -> Cézanne et moi
+cezanne and i -> Cézanne et moi ok
 maddman: the steve madden story -> 2017 not 2018
 all about asado -> Todo sobre el asado
+
+
+PIPELINE:
+1. 年份分佈
+2. genre 分佈
+3. imdb_analysis
+4. originals (Yes/No)
+
+4. Yes -> Youtube Analysis
+4.1 Trailer statistics: likes, dislikes, views, comments
+4.2 comments sentiment analysis
+4.2.1 frequent words == wordcloud
+4.2.2 sentiment counts
+4.2.3 polarity and subjectivity plot
