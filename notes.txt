@@ -60,3 +60,6 @@ PIPELINE:
 4.2.1 frequent words == wordcloud
 4.2.2 sentiment counts
 4.2.3 polarity and subjectivity plot
+
+4. No -> 就不用接下去了
+
