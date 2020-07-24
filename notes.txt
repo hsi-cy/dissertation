@@ -34,3 +34,15 @@ top_10_tvshow = [
     'When They See Us',
     'Elite'
 ]
+
+free fire : year = 2016 ok
+#friendbutmarried -> #TemanTapiMenikah (the original title) ok
+silent hill: revelation -> without 3d ok
+manhattan romance -> 2014 ok
+the meyerowitz stories -> without () ok
+fyre: the greatest party that never happened -> fyre
+theatre of life -> theater of life ok 
+woodstock: three days that defined a generation -> woodstock ok
+cezanne and i -> Cézanne et moi ok
+maddman: the steve madden story -> 2017 not 2018
+all about asado -> Todo sobre el asado

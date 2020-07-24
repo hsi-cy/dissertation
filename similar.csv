@@ -1,0 +1,111 @@
+,title,similarity,originals,genres,year
+0,bird box,1.0,1,"thriller,drama,science-fiction,mystery,horror",2018
+1,the silence,0.8523328900337219,0,"horror,drama,science-fiction,thriller,mystery,fantasy,comedy",2019
+2,dark places,0.8452717661857605,0,"drama,mystery,thriller,action-and-adventure",2015
+3,the forest of love,0.8376951217651367,1,"drama,mystery,horror,thriller,crime",2019
+4,the keeping hours,0.8354559540748596,0,"thriller,drama,fantasy,horror,mystery",2017
+5,how it ends,0.8339114189147949,1,"action-and-adventure,science-fiction,thriller,mystery,drama",2018
+6,cabin fever,0.8330482244491577,0,"comedy,horror,science-fiction,thriller,mystery",2016
+7,our house,0.8324781656265259,0,"drama,horror,mystery,science-fiction,thriller",2018
+8,mute,0.8303752541542053,1,"drama,mystery,science-fiction,thriller",2017
+9,into the forest,0.8292941451072693,0,"drama,science-fiction,thriller,mystery,horror",2016
+10,dark skies,0.8282501697540283,0,"horror,science-fiction,thriller,mystery,documentary",2013
+11,murder mystery,1.0000001192092896,1,"comedy,crime,mystery,action-and-adventure,romance,thriller",2019
+12,ek hasina thi,0.8399155139923096,0,"crime,romance,thriller,drama,mystery,action-and-adventure",2004
+13,i am wrath,0.8390663862228394,0,"action-and-adventure,thriller,crime,drama,mystery",2016
+14,haider,0.8373321890830994,0,"crime,drama,romance,thriller,action-and-adventure",2014
+15,one 2 ka 4,0.8352243304252625,0,"action-and-adventure,comedy,drama,crime,thriller,mystery",2001
+16,the guest,0.8345416784286499,0,"action-and-adventure,mystery,thriller,crime,drama,comedy,horror",2014
+17,bad day for the cut,0.8335911631584167,0,"thriller,action-and-adventure,crime,drama,mystery",2017
+18,hell or high water,0.8295177221298218,0,"thriller,crime,drama,mystery,action-and-adventure",2016
+19,vanjagar ulagam,0.818825364112854,0,"crime,drama,thriller,action-and-adventure",2018
+20,acts of vengeance,0.8185352087020874,0,"action-and-adventure,drama,thriller,mystery",2017
+21,awake,0.8156998753547668,0,"action-and-adventure,crime,thriller,mystery",2019
+22,triple frontier,1.000000238418579,1,"action-and-adventure,thriller,crime,drama,mystery",2019
+23,the crew,0.8245210647583008,1,"drama,crime,mystery,thriller,action-and-adventure",2015
+24,den of thieves,0.8146085143089294,0,"action-and-adventure,crime,drama,mystery,thriller",2018
+25,extraction,0.812751293182373,1,"action-and-adventure,thriller,drama,mystery",2020
+26,buybust,0.806571900844574,0,"action-and-adventure,drama,thriller,crime,mystery",2018
+27,the brave,0.8023699522018433,0,"action-and-adventure,crime,thriller,mystery",2019
+28,sleepless,0.8005715012550354,0,"action-and-adventure,thriller,crime,mystery,drama",2017
+29,free fire,0.7958837747573853,0,"action-and-adventure,crime,thriller,comedy,mystery",2017
+30,blood father,0.7937015891075134,0,"action-and-adventure,independent,thriller,crime,drama,mystery",2016
+31,the trust,0.792305588722229,0,"crime,thriller,drama,mystery,documentary,comedy,action-and-adventure",2016
+32,coin heist,0.7913156151771545,1,"crime,drama,family,romance,mystery,thriller",2017
+33,the perfect date,1.0000001192092896,1,"romance,comedy",2019
+34,swiped,0.821608304977417,0,"comedy,romance,drama",2018
+35,yes or no,0.8101529479026794,0,"comedy,romance",2010
+36,lady-like,0.8091697096824646,0,"comedy,romance",2017
+37,can't hardly wait,0.8071354031562805,0,"comedy,romance,drama",1998
+38,social animals,0.806844174861908,0,"documentary,comedy,romance",2018
+39,#friendbutmarried,0.8053033351898193,0,"biography,drama,romance,comedy",2018
+40,68 kill,0.8025535345077515,0,"comedy,romance,thriller,crime,mystery",2017
+41,the new romantic,0.801926851272583,0,"drama,comedy,romance",2018
+42,yes or no 2.5,0.8002873063087463,0,"romance,comedy",2015
+43,the half of it,0.7953481674194336,1,"comedy,romance,drama",2020
+44,tall girl,0.9999998211860657,1,"comedy,drama,romance",2019
+45,laggies,0.8895983099937439,0,"comedy,romance,drama",2014
+46,love is blind,0.8880212306976318,1,"comedy,drama,romance",2019
+47,social animals,0.8737854361534119,0,"documentary,comedy,romance",2018
+48,ugly aur pagli,0.872609555721283,0,"comedy,drama,romance",2008
+49,next enti?,0.8715216517448425,0,"comedy,drama,romance",2018
+50,deliha 2,0.8676814436912537,0,comedy,2018
+51,isoken,0.8670538067817688,0,romance,2017
+52,rainbow time,0.8646495342254639,0,"comedy,drama",2016
+53,jessica darling's it list,0.8645580410957336,0,family,2016
+54,i'll see you in my dreams,0.8645524978637695,0,"romance,comedy,drama",2015
+55,the highwaymen,1.0,1,"crime,drama,thriller,biography,mystery",2019
+56,zodiac,0.8245297074317932,0,"crime,drama,mystery,thriller",2007
+57,kiss the girls,0.8189855813980103,0,"crime,drama,mystery,thriller",1997
+58,once upon a time in london,0.8091153502464294,0,crime,2019
+59,legend,0.8083860278129578,0,"biography,crime,drama,thriller,mystery,horror,comedy",2015
+60,the watcher,0.8063874244689941,0,"crime,horror,mystery,drama,thriller",2000
+61,black rose,0.8057610392570496,0,"action-and-adventure,crime,drama",2014
+62,the car: road to revenge,0.8013088703155518,0,"action-and-adventure,horror,thriller,mystery,science-fiction",2019
+63,the foreigner,0.7988675236701965,0,"action-and-adventure,drama,thriller,mystery,crime",2017
+64,public enemies,0.7965455651283264,0,"action-and-adventure,thriller,biography,crime,drama,history,mystery",2009
+65,"extremely wicked, shockingly evil and vile",0.7945922017097473,1,"thriller,crime,drama,biography,mystery",2019
+66,secret obsession,1.0,1,"drama,thriller,mystery",2019
+67,silent hill: revelation 3d,0.9115014672279358,0,"horror,mystery,thriller",2012
+68,the heretics,0.9085698127746582,0,"horror,fantasy",2017
+69,dangerous lies,0.9085529446601868,1,"thriller,drama,mystery",2020
+70,casper,0.9080507755279541,0,"comedy,family,fantasy",1995
+71,kia and cosmos,0.9032216668128967,0,drama,2019
+72,what lies beneath,0.9027947187423706,0,"drama,horror,mystery,fantasy,thriller",2000
+73,my ex-ex,0.9018315672874451,0,"comedy,romance",2015
+74,burning,0.9016798138618469,0,"drama,mystery,thriller",2018
+75,you carry me,0.8999345898628235,0,"action-and-adventure,drama,family",2015
+76,come and find me,0.8969237208366394,0,"drama,thriller,mystery",2016
+77,always be my maybe,0.9999998807907104,1,"romance,comedy",2019
+78,quartet,0.8122591376304626,0,"comedy,drama,romance",2012
+79,all about nina,0.8062832355499268,0,"comedy,drama,romance",2018
+80,burlesque,0.8045332431793213,0,"drama,romance,musical",2010
+81,ordinary world,0.8040599822998047,0,"comedy,drama,family,musical",2016
+82,how to get over a breakup,0.8032485246658325,1,comedy,2018
+83,our lovers,0.8008196949958801,0,"comedy,drama,romance",2016
+84,country strong,0.7992651462554932,0,"drama,romance,musical",2010
+85,manhattan romance,0.7986147403717041,0,"comedy,romance,drama",2015
+86,"pop, lock 'n roll",0.7965953350067139,0,"musical,drama,romance",2017
+87,love off the cuff,0.7955067157745361,0,"romance,comedy",2017
+88,otherhood,1.000000238418579,1,comedy,2019
+89,dream house,0.6855231523513794,0,"thriller,drama,mystery",2011
+90,valentine's day,0.6843062043190002,0,"comedy,romance",2010
+91,snow day,0.6840826272964478,0,"children,comedy,action-and-adventure,family",2000
+92,back to school,0.6705430746078491,1,comedy,2019
+93,y tu mamá también,0.6697675585746765,0,"action-and-adventure,lgbtq,comedy,drama,romance",2001
+94,zindagi na milegi dobara,0.6665433645248413,0,"action-and-adventure,comedy,drama,travel,romance",2011
+95,it's for your own good,0.6647970080375671,0,comedy,2017
+96,the bros,0.6634595394134521,0,comedy,2017
+97,shorts,0.6629533767700195,0,"action-and-adventure,comedy,fantasy,family",2009
+98,the meyerowitz stories (new and selected),0.660398006439209,1,"comedy,drama",2017
+99,fyre: the greatest party that never happened,0.9999999403953552,1,documentary,2019
+100,theatre of life,0.6838042140007019,0,"documentary,food",2016
+101,jim gaffigan: obsessed,0.6822324991226196,0,"comedy,stand-up-and-talk,documentary",2014
+102,woodstock: three days that defined a generation,0.6719017028808594,0,"musical,documentary",2019
+103,willy wonka & the chocolate factory,0.670060932636261,0,"family,fantasy,musical,comedy",1971
+104,cezanne and i,0.668498158454895,0,"biography,drama,animation,family",2016
+105,my entire high school sinking into the sea,0.6682538986206055,0,"animation,comedy,drama",2016
+106,maddman: the steve madden story,0.6671972274780273,0,documentary,2018
+107,freej al taibeen,0.665727972984314,0,comedy,2018
+108,all about asado,0.6652495265007019,0,documentary,2016
+109,kevin james: sweat the small stuff,0.6635063886642456,0,"documentary,comedy",2001
