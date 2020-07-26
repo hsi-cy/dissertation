@@ -66,3 +66,9 @@ PIPELINE:
 
 
 91, 108 Locked up 原名 vis a vis
+
+
+不是每個影集都找得到Youtube trailer 
+所以複製成功的問題 可以用top10 analysis來回答？
+
+Stranger things , the umbrella academy 兩個相似度就很高
